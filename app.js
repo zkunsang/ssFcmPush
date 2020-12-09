@@ -2,6 +2,7 @@ const admin = require('firebase-admin');
 const configs = require('./configs.js');
 const ioredis = require('ioredis');
 const events = require('events');
+const { cwd } = require('process');
 const eventEmitter = new events.EventEmitter();
 const { host, port } = configs.redis;
 
@@ -67,3 +68,5 @@ function notificationForApp(result) {
 }
 
 eventEmitter.emit('startFcm');
+
+console.log("fcm server start");
