@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "env NODE_ENV=dev pm2 start app.js"
+    "dev": "env NODE_ENV=dev pm2 start app.js --name fcmPush"
   },
   "author": "",
   "license": "ISC",
